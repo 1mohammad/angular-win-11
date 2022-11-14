@@ -1,0 +1,10 @@
+<div (contextmenu)="openTaskbarMenu($event)" class="taskbar">
+    <div class="widgets">w</div>
+    <div class="center-icons">
+        <win-app-icon
+            *ngFor="let item of menuIcons"
+            [item]="item"
+        ></win-app-icon>
+    </div>
+    <div class="toolbox">t</div>
+</div>

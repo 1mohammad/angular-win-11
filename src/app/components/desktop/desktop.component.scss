@@ -1,0 +1,29 @@
+.wallpaper {
+	min-width: 100vw;
+	min-height: 100vh;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	transition: all .2s ease;
+}
+
+.icons {
+	display: flex;
+	flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+	.icon {
+		width: 74px;
+		height: 84px;
+		margin: 4px;
+		border: 1px dotted transparent;
+		&:hover {
+			background: rgba(255,255,255,.12);
+		}
+		&.selected  {
+			background: rgba(255,255,255,.12);
+			border: 1px dotted white !important;
+		}
+	}
+}

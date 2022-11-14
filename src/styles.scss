@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'ngx-drag-to-select';
+@import "~@angular/cdk/overlay-prebuilt.css";
+
+.cdk-overlay-container {
+	z-index: 999999;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+* {
+	-webkit-user-select: none;
+	-ms-user-select: none; 
+	user-select: none;
+	box-sizing: border-box;
+}

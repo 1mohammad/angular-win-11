@@ -1,0 +1,8 @@
+<div class="app-icon" [class.isTaskbar]="item.taskbar" *ngIf="item.visible" (contextmenu)="openAppMenu($event)"> 
+	<div class="icon">
+		<img [src]="item.icon" alt="">
+	</div>
+	<p class="title" *ngIf="item.showTitle">
+		{{ item.title }}
+	</p>
+</div>

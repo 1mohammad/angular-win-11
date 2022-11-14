@@ -1,0 +1,19 @@
+<dts-select-container
+    (contextmenu)="openMenu($event)"
+    class="wallpaper"
+    [style.background-image]="'url(\'assets/wallpaper/default/img0.jpg\')'"
+    #container="dts-select-container"
+    [(selectedItems)]="selectedDocuments"
+    (select)="someMethod($event)"
+    [custom]="true"
+>
+    <div class="icons">
+        <div
+            class="icon"
+            [dtsSelectItem]="item"
+            *ngFor="let item of apps"
+        >
+            <win-app-icon [item]="item"></win-app-icon>
+        </div>
+    </div>
+</dts-select-container>
